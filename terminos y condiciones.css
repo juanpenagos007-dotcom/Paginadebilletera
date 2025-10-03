@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Body y contenedor */
+body {
+  background: linear-gradient(to top, rgb(81, 81, 148), #48e); /* mismo fondo que movimientos */
+  color: #333;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
+
+.p{
+  text-align: center;
+}
+
+/* Menú horizontal */
+nav.menu {
+  background-color: #193af5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 110%;
+}
+
+nav.menu h2 {
+  color: white;
+  margin-right: 30px;
+}
+
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav.menu a:hover {
+  background-color: rgb(0, 123, 255);
+}
+
+/* Título principal */
+main h1 {
+  text-align: center;
+  color: #fff5f5; /* igual que en la cabecera principal */
+  margin-bottom: 30px;
+}
+
+/* Contenido de términos */
+main p {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  width: 150%;
+}
+
+.pie {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.pie-items {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.pie-items a {
+  display: block;
+  margin-top: 5px;
+  color: #084eaa;
+  text-decoration: none;
+}
+
+.pie-items a:hover {
+  text-decoration: underline;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav.menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav.menu h2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  main p {
+    width: 90%;
+  }
+}

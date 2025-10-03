@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Body y contenedor */
+body {
+  background: linear-gradient(to top, rgb(81, 81, 148), #48e);
+  color: #333;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Contenedor principal como columna */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+main {
+  flex: 1;
+}
+
+
+/* Menú horizontal */
+nav.menu {
+  background-color: #193af5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav.menu h2 {
+  color: white;
+  margin-right: 30px;
+}
+
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav.menu a:hover {
+  background-color: rgb(0, 123, 255);
+}
+
+/* Cabecera */
+.Cabecera h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #fff5f5;
+  text-align: center;
+}
+
+.Cabecera p {
+  font-size: 2.1rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Saldo */
+.h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 16%;
+  margin-bottom: 80px;
+}
+
+.h2 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.saldo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.E{
+  text-align: center;
+  color: white;
+}
+
+
+/* Resumen */
+.Resumen {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  margin-left: 24.8%;
+}
+
+.Resumen h2 {
+  margin-bottom: 15px;
+  color: #000000;
+  text-align: center;
+}
+
+.Resumen p {
+    text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  background-color: #f1f1f1; /* opcional, para diferenciar del contenido */
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.pie {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;   
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.pie-items {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav.menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav.menu h2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .Resumen {
+    width: 90%;
+  }
+}
